@@ -8,9 +8,9 @@ namespace Mayope.Server.Rest.Filters
 {
     public class AuthFilter : IActionFilter
     {
-        private readonly IAuthProvider AuthProvider;
-        private readonly IAuth Auth;
-        private readonly ILogger Logger;
+        private IAuthProvider AuthProvider { get; }
+        private IAuth Auth { get; }
+        private ILogger Logger { get; }
 
         public AuthFilter(
             IAuthProvider authProvider,

@@ -1,13 +1,14 @@
 ﻿using System;
 using System.Collections.Generic;
+
 using Microsoft.Extensions.Logging;
 
 namespace Mayope.Auth.Mock
 {
     public class MockAuthProvider : IAuthProvider
     {
-        private readonly ILogger Logger;
-        private readonly IDictionary<Guid,MockToken> Tokens;
+        private ILogger Logger { get; }
+        private IDictionary<Guid,MockToken> Tokens { get; }
 
         public MockAuthProvider(ILogger<MockAuthProvider> logger)
         {

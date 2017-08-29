@@ -1,5 +1,3 @@
-using System;
-
 namespace Mayope.Auth
 {
     public class UsernamePasswordCredentials : ICredentials

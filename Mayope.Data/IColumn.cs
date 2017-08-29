@@ -1,5 +1,3 @@
-using System;
-
 namespace Mayope.Data
 {
     public interface IColumn

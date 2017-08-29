@@ -1,4 +1,5 @@
 ﻿using System;
+
 using Microsoft.Extensions.Logging;
 
 using Mayope.Data;
@@ -7,8 +8,8 @@ namespace Mayope.Auth.Data
 {
     public class DataAuthProvider : IAuthProvider
     {
-        private readonly IDataProvider DataProvider;
-        private readonly ILogger Logger;
+        private IDataProvider DataProvider { get; }
+        private ILogger Logger { get; }
 
         public DataAuthProvider(
             IDataProvider dataProvider,

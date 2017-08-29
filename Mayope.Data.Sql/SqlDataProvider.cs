@@ -1,12 +1,12 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
+
 using Microsoft.Extensions.Logging;
 
 namespace Mayope.Data.Sql
 {
     public abstract class SqlDataProvider : IDataProvider
     {
-        private readonly ILogger Logger;
+        protected ILogger Logger { get; }
 
         protected SqlDataProvider(ILogger logger)
         {

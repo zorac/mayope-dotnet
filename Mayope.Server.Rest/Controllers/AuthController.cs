@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 
@@ -12,8 +13,8 @@ namespace Mayope.Server.Rest.Controllers
     [Route("auth")]
     public class AuthController : Controller
     {
-        private IServer Server;
-        private ILogger Logger;
+        private IServer Server { get; }
+        private ILogger Logger { get; }
 
         public AuthController(
             IServer server,

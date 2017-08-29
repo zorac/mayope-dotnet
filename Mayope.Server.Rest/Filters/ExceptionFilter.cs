@@ -1,3 +1,5 @@
+using System.Collections.Generic;
+
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Filters;
 using Microsoft.Extensions.Logging;
@@ -10,10 +12,9 @@ namespace Mayope.Server.Rest.Filters
 {
     public class ExceptionFilter : IExceptionFilter
     {
-        private readonly ILogger Logger;
+        private ILogger Logger { get; }
 
-        public ExceptionFilter(
-            ILogger<ExceptionFilter> logger)
+        public ExceptionFilter(ILogger<ExceptionFilter> logger)
         {
             Logger = logger;
         }
@@ -24,6 +25,7 @@ namespace Mayope.Server.Rest.Filters
             var status = 500;
             var error = ErrorType.Unknown;
             var message = exception.Message;
+            Dictionary<string,string> details = null;
 
             if (exception is AuthorizationException)
             {
@@ -34,6 +36,7 @@ namespace Mayope.Server.Rest.Filters
             {
                 status = 400;
                 error = ErrorType.Validation;
+                details = (exception as ValidationException).Errors;
             }
             else if (exception is AuthenticationException)
             {
@@ -43,13 +46,14 @@ namespace Mayope.Server.Rest.Filters
             else
             {
                 Logger.LogError(exception, "Unexpected exeption");
-                message = "An unexpected error occurred"; // Avoid information leak
+                message = null; // Avoid information leak
             }
 
             var response = new ErrorResponse
             {
                 Error = error,
-                Message = message
+                Message = message,
+                Details = details
             };
 
             context.Result = new ObjectResult(response)

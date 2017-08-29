@@ -1,6 +1,4 @@
-﻿using System;
-
-namespace Mayope.Auth
+﻿namespace Mayope.Auth
 {
     public interface IUser
     {

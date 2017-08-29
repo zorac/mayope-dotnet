@@ -9,9 +9,9 @@ namespace Mayope.Server
 {
     public class MayopeServer : IServer
     {
-        private readonly IDataProvider DataProvider;
-        private readonly IAuthProvider AuthProvider;
-        private readonly ILogger Logger;
+        private IDataProvider DataProvider { get; }
+        private IAuthProvider AuthProvider { get; }
+        private ILogger Logger { get; }
 
         public MayopeServer(
             IDataProvider dataProvider,

@@ -1,16 +1,18 @@
 using System;
+using System.Collections.Generic;
 using System.Linq;
+
 using Microsoft.AspNetCore.Mvc.Filters;
+using Microsoft.AspNetCore.Mvc.ModelBinding;
 using Microsoft.Extensions.Logging;
 
 namespace Mayope.Server.Rest.Filters
 {
     public class ValidationFilter : IActionFilter
     {
-        private readonly ILogger Logger;
+        private ILogger Logger { get; }
 
-        public ValidationFilter(
-            ILogger<ValidationFilter> logger)
+        public ValidationFilter(ILogger<ValidationFilter> logger)
         {
             Logger = logger;
         }
@@ -19,10 +21,24 @@ namespace Mayope.Server.Rest.Filters
         {
             if (!context.ModelState.IsValid)
             {
-                string messages = string.Join("; ", context.ModelState.Values
-                    .SelectMany(v => v.Errors)
-                    .Select(e => e.ErrorMessage));
-                throw new ValidationException("Request is invalid: " + messages);
+                var errors = new Dictionary<string,string>();
+
+                foreach (var item in context.ModelState)
+                {
+                    string key = item.Key;
+                    ModelStateEntry state = item.Value;
+
+                    if (state.Errors.Count > 0)
+                    {
+                        key = (key.Length == 0) ? "ROOT"
+                            : Char.ToLowerInvariant(key[0]) + key.Substring(1);
+
+                        errors[key] = String.Join(" ",
+                                state.Errors.Select(e => e.ErrorMessage));
+                    }
+                }
+
+                throw new ValidationException(errors);
             }
         }
 

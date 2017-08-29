@@ -1,5 +1,3 @@
-using System;
-
 namespace Mayope.Auth.Mock
 {
     public class MockUser : IUser

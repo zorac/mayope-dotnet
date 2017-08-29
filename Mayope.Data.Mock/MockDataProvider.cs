@@ -1,11 +1,12 @@
 ﻿using System.Collections.Generic;
+
 using Microsoft.Extensions.Logging;
 
 namespace Mayope.Data.Mock
 {
     public class MockDataProvider : IDataProvider
     {
-        private readonly ILogger Logger;
+        private ILogger Logger { get; }
 
         public MockDataProvider(ILogger<MockDataProvider> logger)
         {
