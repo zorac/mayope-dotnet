@@ -7,19 +7,18 @@ using System.ComponentModel.DataAnnotations;
 
 using Newtonsoft.Json;
 
-namespace Mayope.Api.Responses
+namespace Mayope.Api.Requests
 {
     /// <summary>
-    /// A successful login response including the authentication token to use in
-    /// future authenticated requests.
+    /// A request for a list of trees.
     /// </summary>
-    public class LoginResponse : IResponse
+    public class ListTreesRequest : AuthenticatedRequest
     {
         /// <summary>
-        /// An authentication token to use in future requests.
+        /// The UUID of the forest to list the trees in.
         /// </summary>
         [Required]
         [JsonRequired]
-        public Guid Token { get; set; }
+        public Guid Forest { get; set; }
     }
 }

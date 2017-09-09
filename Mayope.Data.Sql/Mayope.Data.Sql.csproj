@@ -2,6 +2,16 @@
 
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
+    <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+    <Product>Mayope</Product>
+    <Title>Mayope Data via SQL</Title>
+    <Version>0.1.0</Version>
+    <Description>Mayope data-access using a SQL database.</Description>
+    <Authors>Mark Rigby-Jones</Authors>
+    <Owners>Mark Rigby-Jones</Owners>
+    <PackageProjectUrl>https://mayope.org/</PackageProjectUrl>
+    <PackageIconUrl>https://mayope.org/images/nuget.png</PackageIconUrl>
+    <RepositoryUrl>https://github.com/zorac/mayope-dotnet.git</RepositoryUrl>
   </PropertyGroup>
 
   <ItemGroup>

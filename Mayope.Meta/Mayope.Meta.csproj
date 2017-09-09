@@ -4,9 +4,9 @@
     <TargetFramework>netstandard2.0</TargetFramework>
     <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
     <Product>Mayope</Product>
-    <Title>Mayope Auth</Title>
+    <Title>Mayope Metadata</Title>
     <Version>0.1.0</Version>
-    <Description>Mayope authentication/authorization API.</Description>
+    <Description>The Mayope metadata API.</Description>
     <Authors>Mark Rigby-Jones</Authors>
     <Owners>Mark Rigby-Jones</Owners>
     <PackageProjectUrl>https://mayope.org/</PackageProjectUrl>

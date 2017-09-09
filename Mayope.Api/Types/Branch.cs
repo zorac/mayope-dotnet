@@ -6,25 +6,23 @@ using System.ComponentModel.DataAnnotations;
 
 using Newtonsoft.Json;
 
-namespace Mayope.Api.Requests
+namespace Mayope.Api.Types
 {
     /// <summary>
-    /// A login request, including username/password credentials.
+    /// Details of a branch in a Mayope schema.
     /// </summary>
-    public class LoginRequest : IRequest
+    public class Branch : Node
     {
         /// <summary>
-        /// The username to log in with.
+        /// The type of the branch's value.
         /// </summary>
         [Required]
         [JsonRequired]
-        public string Username { get; set; }
+        public string Type { get; set; }
 
         /// <summary>
-        /// The user's password.
+        /// The child branches if the type involves a Tree.
         /// </summary>
-        [Required]
-        [JsonRequired]
-        public string Password { get; set; }
+        public Branch Branches { get; set; }
     }
 }

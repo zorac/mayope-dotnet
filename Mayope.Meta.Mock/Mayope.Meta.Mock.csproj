@@ -4,14 +4,22 @@
     <TargetFramework>netstandard2.0</TargetFramework>
     <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
     <Product>Mayope</Product>
-    <Title>Mayope Auth</Title>
+    <Title>Mayope Metadata Mocks</Title>
     <Version>0.1.0</Version>
-    <Description>Mayope authentication/authorization API.</Description>
+    <Description>Mocked Mayope metadata.</Description>
     <Authors>Mark Rigby-Jones</Authors>
     <Owners>Mark Rigby-Jones</Owners>
     <PackageProjectUrl>https://mayope.org/</PackageProjectUrl>
     <PackageIconUrl>https://mayope.org/images/nuget.png</PackageIconUrl>
     <RepositoryUrl>https://github.com/zorac/mayope-dotnet.git</RepositoryUrl>
   </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Mayope.Meta\Mayope.Meta.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.Extensions.Logging.Abstractions" Version="2.0.0" />
+  </ItemGroup>
 
 </Project>

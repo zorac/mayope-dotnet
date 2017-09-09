@@ -5,35 +5,18 @@
    "version": "0.2.0",
    "configurations": [
         {
-            "name": "REST Server",
+            "name": "HTTP Server",
             "type": "coreclr",
             "request": "launch",
             "preLaunchTask": "build",
             // If you have changed target frameworks, make sure to update the program path.
-            "program": "${workspaceRoot}/Mayope.Server.Rest/bin/Debug/netcoreapp2.0/Mayope.Server.Rest.dll",
+            "program": "${workspaceRoot}/Mayope.Server.Http/bin/Debug/netcoreapp2.0/Mayope.Server.Http.dll",
             "args": [],
-            "cwd": "${workspaceRoot}/Mayope.Server.Rest",
+            "cwd": "${workspaceRoot}/Mayope.Server.Http",
             "stopAtEntry": false,
             "internalConsoleOptions": "openOnSessionStart",
-            "launchBrowser": {
-                "enabled": false,
-                "args": "${auto-detect-url}",
-                "windows": {
-                    "command": "cmd.exe",
-                    "args": "/C start ${auto-detect-url}"
-                },
-                "osx": {
-                    "command": "open"
-                },
-                "linux": {
-                    "command": "xdg-open"
-                }
-            },
             "env": {
                 "ASPNETCORE_ENVIRONMENT": "Development"
-            },
-            "sourceFileMap": {
-                "/Views": "${workspaceRoot}/Views"
             }
         },
         {

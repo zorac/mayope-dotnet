@@ -7,16 +7,15 @@ using System.ComponentModel.DataAnnotations;
 
 using Newtonsoft.Json;
 
-namespace Mayope.Api.Responses
+namespace Mayope.Api.Requests
 {
     /// <summary>
-    /// A successful login response including the authentication token to use in
-    /// future authenticated requests.
+    /// A request including an authentication token.
     /// </summary>
-    public class LoginResponse : IResponse
+    public abstract class AuthenticatedRequest : IRequest
     {
         /// <summary>
-        /// An authentication token to use in future requests.
+        /// A token authenticating the user.
         /// </summary>
         [Required]
         [JsonRequired]

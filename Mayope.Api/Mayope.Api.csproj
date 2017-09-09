@@ -2,9 +2,20 @@
 
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
+    <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+    <Product>Mayope</Product>
+    <Title>Mayope API</Title>
+    <Version>0.1.0</Version>
+    <Description>The Mayope client/server API.</Description>
+    <Authors>Mark Rigby-Jones</Authors>
+    <Owners>Mark Rigby-Jones</Owners>
+    <PackageProjectUrl>https://mayope.org/</PackageProjectUrl>
+    <PackageIconUrl>https://mayope.org/images/nuget.png</PackageIconUrl>
+    <RepositoryUrl>https://github.com/zorac/mayope-dotnet.git</RepositoryUrl>
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="NewtonSoft.Json" Version="10.0.1" />
     <PackageReference Include="System.ComponentModel.Annotations" Version="4.4.0" />
   </ItemGroup>
 

@@ -1,0 +1,36 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.0</TargetFramework>
+    <OutputType>Exe</OutputType>
+    <Product>Mayope</Product>
+    <Title>Mayope Server via HTTP</Title>
+    <Version>0.1.0</Version>
+    <Description>Mayope server over HTTP.</Description>
+    <Authors>Mark Rigby-Jones</Authors>
+    <Owners>Mark Rigby-Jones</Owners>
+    <PackageProjectUrl>https://mayope.org/</PackageProjectUrl>
+    <PackageIconUrl>https://mayope.org/images/nuget.png</PackageIconUrl>
+    <RepositoryUrl>https://github.com/zorac/mayope-dotnet.git</RepositoryUrl>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Mayope.Api\Mayope.Api.csproj" />
+    <ProjectReference Include="..\Mayope.Auth\Mayope.Auth.csproj" />
+    <ProjectReference Include="..\Mayope.Auth.Mock\Mayope.Auth.Mock.csproj" />
+    <ProjectReference Include="..\Mayope.Data\Mayope.Data.csproj" />
+    <ProjectReference Include="..\Mayope.Data.Mock\Mayope.Data.Mock.csproj" />
+    <ProjectReference Include="..\Mayope.Meta\Mayope.Meta.csproj" />
+    <ProjectReference Include="..\Mayope.Meta.Mock\Mayope.Meta.Mock.csproj" />
+    <ProjectReference Include="..\Mayope.Server\Mayope.Server.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.All" Version="2.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <DotNetCliToolReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Tools" Version="2.0.0" />
+  </ItemGroup>
+
+</Project>
