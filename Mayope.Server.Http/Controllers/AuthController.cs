@@ -23,14 +23,16 @@ namespace Mayope.Server.Http.Controllers
             Logger = logger;
         }
 
-        [HttpPost("login")]
-        public LoginResponse Login([FromBody] LoginRequest request)
+        [HttpPost("Login")]
+        public LoginResponse Login(
+            [FromBody] LoginRequest request)
         {
             return Service.Login(request);
         }
 
-        [HttpPost("logout")]
-        public LogoutResponse Logout([FromBody] LogoutRequest request)
+        [HttpPost("Logout")]
+        public LogoutResponse Logout(
+            [FromBody] LogoutRequest request)
         {
             return Service.Logout(request);
         }

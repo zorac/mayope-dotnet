@@ -3,15 +3,33 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.26124.0
 MinimumVisualStudioVersion = 15.0.26124.0
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mayope.Core", "Mayope.Core\Mayope.Core.csproj", "{E31B6383-8738-408F-B8B2-0139406F9ACA}"
+EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mayope.Api", "Mayope.Api\Mayope.Api.csproj", "{0483E1E5-51A2-4507-9E9D-406B3845A550}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mayope.Data", "Mayope.Data\Mayope.Data.csproj", "{92021D08-3092-49AC-A595-DDF740562635}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mayope.Data.Mock", "Mayope.Data.Mock\Mayope.Data.Mock.csproj", "{593EF5C5-85A1-4BB5-9A99-7979EEA8DE53}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mayope.Data.FileSystem", "Mayope.Data.FileSystem\Mayope.Data.FileSystem.csproj", "{D3A32125-C6D3-4A38-9933-B4063369C7F4}"
+EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mayope.Data.Sql", "Mayope.Data.Sql\Mayope.Data.Sql.csproj", "{77F70ADD-5B3E-436C-B48A-108F5703C021}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mayope.Data.Mysql", "Mayope.Data.Mysql\Mayope.Data.Mysql.csproj", "{09AC80E0-5234-412B-9635-9EA9AA77ADE1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mayope.Data.Postgres", "Mayope.Data.Postgres\Mayope.Data.Postgres.csproj", "{102FD7C4-275C-44DC-B9D0-BC7BE553F309}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mayope.Data.Sqlite", "Mayope.Data.Sqlite\Mayope.Data.Sqlite.csproj", "{164A0943-254C-4C29-B1D1-5D7595409874}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mayope.Data.SqlServer", "Mayope.Data.SqlServer\Mayope.Data.SqlServer.csproj", "{6696BBD4-91D1-45D7-9A8D-D760394B659F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mayope.Data.Ldap", "Mayope.Data.Ldap\Mayope.Data.Ldap.csproj", "{F4743659-F312-470E-8B36-3D66E47C3936}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mayope.Data.ActiveDirectory", "Mayope.Data.ActiveDirectory\Mayope.Data.ActiveDirectory.csproj", "{8E06B603-811A-4B9A-9EF1-58097CEE0FC8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mayope.Data.OpenLdap", "Mayope.Data.OpenLdap\Mayope.Data.OpenLdap.csproj", "{D5C462C9-40DC-46EF-AAB8-6065A489A4CF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mayope.Data.Redis", "Mayope.Data.Redis\Mayope.Data.Redis.csproj", "{57A6F42F-A755-4E8E-9999-1B137FABBC12}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mayope.Auth", "Mayope.Auth\Mayope.Auth.csproj", "{A581A988-2683-46C2-912D-5C4B7931CE4B}"
 EndProject
@@ -90,5 +108,41 @@ Global
 		{D9D1CEC1-3B58-4809-979A-6A19E5D90CD1}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D9D1CEC1-3B58-4809-979A-6A19E5D90CD1}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D9D1CEC1-3B58-4809-979A-6A19E5D90CD1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E31B6383-8738-408F-B8B2-0139406F9ACA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E31B6383-8738-408F-B8B2-0139406F9ACA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E31B6383-8738-408F-B8B2-0139406F9ACA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E31B6383-8738-408F-B8B2-0139406F9ACA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D3A32125-C6D3-4A38-9933-B4063369C7F4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D3A32125-C6D3-4A38-9933-B4063369C7F4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D3A32125-C6D3-4A38-9933-B4063369C7F4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D3A32125-C6D3-4A38-9933-B4063369C7F4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F4743659-F312-470E-8B36-3D66E47C3936}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F4743659-F312-470E-8B36-3D66E47C3936}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F4743659-F312-470E-8B36-3D66E47C3936}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F4743659-F312-470E-8B36-3D66E47C3936}.Release|Any CPU.Build.0 = Release|Any CPU
+		{102FD7C4-275C-44DC-B9D0-BC7BE553F309}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{102FD7C4-275C-44DC-B9D0-BC7BE553F309}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{102FD7C4-275C-44DC-B9D0-BC7BE553F309}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{102FD7C4-275C-44DC-B9D0-BC7BE553F309}.Release|Any CPU.Build.0 = Release|Any CPU
+		{57A6F42F-A755-4E8E-9999-1B137FABBC12}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{57A6F42F-A755-4E8E-9999-1B137FABBC12}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{57A6F42F-A755-4E8E-9999-1B137FABBC12}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{57A6F42F-A755-4E8E-9999-1B137FABBC12}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6696BBD4-91D1-45D7-9A8D-D760394B659F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6696BBD4-91D1-45D7-9A8D-D760394B659F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6696BBD4-91D1-45D7-9A8D-D760394B659F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6696BBD4-91D1-45D7-9A8D-D760394B659F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{164A0943-254C-4C29-B1D1-5D7595409874}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{164A0943-254C-4C29-B1D1-5D7595409874}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{164A0943-254C-4C29-B1D1-5D7595409874}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{164A0943-254C-4C29-B1D1-5D7595409874}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8E06B603-811A-4B9A-9EF1-58097CEE0FC8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8E06B603-811A-4B9A-9EF1-58097CEE0FC8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8E06B603-811A-4B9A-9EF1-58097CEE0FC8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8E06B603-811A-4B9A-9EF1-58097CEE0FC8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D5C462C9-40DC-46EF-AAB8-6065A489A4CF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D5C462C9-40DC-46EF-AAB8-6065A489A4CF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D5C462C9-40DC-46EF-AAB8-6065A489A4CF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D5C462C9-40DC-46EF-AAB8-6065A489A4CF}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal

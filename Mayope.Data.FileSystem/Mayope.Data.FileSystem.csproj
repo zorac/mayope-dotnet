@@ -4,9 +4,9 @@
     <TargetFramework>netstandard2.0</TargetFramework>
     <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
     <Product>Mayope</Product>
-    <Title>Mayope Data</Title>
+    <Title>Mayope Data via Files</Title>
     <Version>0.1.0</Version>
-    <Description>The Mayope data-access API.</Description>
+    <Description>Mayope data-access using a filesystem.</Description>
     <Authors>Mark Rigby-Jones</Authors>
     <Owners>Mark Rigby-Jones</Owners>
     <PackageProjectUrl>https://mayope.org/</PackageProjectUrl>
@@ -16,6 +16,11 @@
 
   <ItemGroup>
     <ProjectReference Include="..\Mayope.Core\Mayope.Core.csproj" />
+    <ProjectReference Include="..\Mayope.Data\Mayope.Data.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.Extensions.Logging.Abstractions" Version="2.0.0" />
   </ItemGroup>
 
 </Project>

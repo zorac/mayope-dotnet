@@ -5,13 +5,13 @@ using Microsoft.Extensions.Logging;
 
 using Mayope.Core;
 
-namespace Mayope.Data.Mock
+namespace Mayope.Data.Ldap
 {
-    public class MockDataService : IDataService
+    public abstract class LdapDataService : IDataService
     {
-        private ILogger Logger { get; }
+        protected ILogger Logger { get; }
 
-        public MockDataService(ILogger<MockDataService> logger)
+        protected LdapDataService(ILogger<LdapDataService> logger)
         {
             Logger = logger;
         }

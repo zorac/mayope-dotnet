@@ -38,7 +38,7 @@ namespace Mayope.Auth.Mock
             }
             else
             {
-                return null; // TODO throw exception?
+                throw new AuthenticationException("Unsupported credentials");
             }
         }
 
@@ -50,7 +50,7 @@ namespace Mayope.Auth.Mock
             }
             else
             {
-                return null;
+                throw new AuthenticationException("Not authenticated");
             }
         }
 

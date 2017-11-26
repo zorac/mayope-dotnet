@@ -14,4 +14,8 @@
     <RepositoryUrl>https://github.com/zorac/mayope-dotnet.git</RepositoryUrl>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\Mayope.Core\Mayope.Core.csproj" />
+  </ItemGroup>
+
 </Project>

@@ -15,6 +15,7 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\Mayope.Core\Mayope.Core.csproj" />
     <ProjectReference Include="..\Mayope.Data\Mayope.Data.csproj" />
     <ProjectReference Include="..\Mayope.Meta\Mayope.Meta.csproj" />
   </ItemGroup>

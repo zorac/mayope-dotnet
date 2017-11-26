@@ -21,17 +21,17 @@ namespace Mayope.Auth.Data
 
         public IToken Login(ICredentials credentials)
         {
-            return null; // TODO
+            throw new NotImplementedException();
         }
 
         public IToken GetToken(Guid id)
         {
-            return null; // TODO
+            throw new NotImplementedException();
         }
 
         public bool Logout(IToken token)
         {
-            return false; // TODO
+            throw new NotImplementedException();
         }
     }
 }

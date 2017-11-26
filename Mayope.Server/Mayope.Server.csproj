@@ -17,7 +17,9 @@
   <ItemGroup>
     <ProjectReference Include="..\Mayope.Api\Mayope.Api.csproj" />
     <ProjectReference Include="..\Mayope.Auth\Mayope.Auth.csproj" />
+    <ProjectReference Include="..\Mayope.Core\Mayope.Core.csproj" />
     <ProjectReference Include="..\Mayope.Data\Mayope.Data.csproj" />
+    <ProjectReference Include="..\Mayope.Meta\Mayope.Meta.csproj" />
   </ItemGroup>
 
   <ItemGroup>

@@ -4,9 +4,9 @@
     <TargetFramework>netstandard2.0</TargetFramework>
     <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
     <Product>Mayope</Product>
-    <Title>Mayope Data</Title>
+    <Title>Mayope Core</Title>
     <Version>0.1.0</Version>
-    <Description>The Mayope data-access API.</Description>
+    <Description>Mayope core interfaces.</Description>
     <Authors>Mark Rigby-Jones</Authors>
     <Owners>Mark Rigby-Jones</Owners>
     <PackageProjectUrl>https://mayope.org/</PackageProjectUrl>
@@ -15,7 +15,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\Mayope.Core\Mayope.Core.csproj" />
+    <PackageReference Include="NewtonSoft.Json" Version="10.0.1" />
   </ItemGroup>
 
 </Project>

@@ -5,13 +5,13 @@ using Microsoft.Extensions.Logging;
 
 using Mayope.Core;
 
-namespace Mayope.Data.Mock
+namespace Mayope.Data.FileSystem
 {
-    public class MockDataService : IDataService
+    public abstract class FileSystemDataService : IDataService
     {
-        private ILogger Logger { get; }
+        protected ILogger Logger { get; }
 
-        public MockDataService(ILogger<MockDataService> logger)
+        protected FileSystemDataService(ILogger<FileSystemDataService> logger)
         {
             Logger = logger;
         }

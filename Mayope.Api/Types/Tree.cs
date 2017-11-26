@@ -4,17 +4,19 @@
 
 using System.Collections.Generic;
 
+using Mayope.Core;
+
 namespace Mayope.Api.Types
 {
     /// <summary>
     /// Details of a tree.
     /// </summary>
-    public class Tree : Node
+    public class Tree : Node, ITree
     {
         /// <summary>
-        /// The branches within this tree; empty if none, null if this is a stub
-        /// record.
+        /// The branches within this tree; empty if none, null if this is a
+        /// stub record.
         /// </summary>
-        public IList<Branch> Branches { get; set; }
+        public IList<IBranch> Branches { get; set; }
     }
 }

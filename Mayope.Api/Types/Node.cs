@@ -5,6 +5,8 @@
 using System;
 using System.ComponentModel.DataAnnotations;
 
+using Mayope.Core;
+
 using Newtonsoft.Json;
 
 namespace Mayope.Api.Types
@@ -12,7 +14,7 @@ namespace Mayope.Api.Types
     /// <summary>
     /// A node in a Myaope schema.
     /// </summary>
-    public abstract class Node
+    public abstract class Node : INode
     {
         /// <summary>
         /// A universally unique identifier for the node.
