@@ -47,6 +47,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mayope.Server", "Mayope.Ser
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mayope.Server.Http", "Mayope.Server.Http\Mayope.Server.Http.csproj", "{6EDC68E4-F39F-4FF1-BC9E-942E46F1AC35}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mayope.Meta.File", "Mayope.Meta.File\Mayope.Meta.File.csproj", "{DA913441-89E7-485C-B6DA-E85D40D61715}"
+EndProject
 Global
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -54,6 +56,10 @@ Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
 		Release|Any CPU = Release|Any CPU
+		Debug|x64 = Debug|x64
+		Debug|x86 = Debug|x86
+		Release|x64 = Release|x64
+		Release|x86 = Release|x86
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
 		{0483E1E5-51A2-4507-9E9D-406B3845A550}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
@@ -144,5 +150,17 @@ Global
 		{D5C462C9-40DC-46EF-AAB8-6065A489A4CF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D5C462C9-40DC-46EF-AAB8-6065A489A4CF}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D5C462C9-40DC-46EF-AAB8-6065A489A4CF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DA913441-89E7-485C-B6DA-E85D40D61715}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DA913441-89E7-485C-B6DA-E85D40D61715}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DA913441-89E7-485C-B6DA-E85D40D61715}.Debug|x64.ActiveCfg = Debug|x64
+		{DA913441-89E7-485C-B6DA-E85D40D61715}.Debug|x64.Build.0 = Debug|x64
+		{DA913441-89E7-485C-B6DA-E85D40D61715}.Debug|x86.ActiveCfg = Debug|x86
+		{DA913441-89E7-485C-B6DA-E85D40D61715}.Debug|x86.Build.0 = Debug|x86
+		{DA913441-89E7-485C-B6DA-E85D40D61715}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DA913441-89E7-485C-B6DA-E85D40D61715}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DA913441-89E7-485C-B6DA-E85D40D61715}.Release|x64.ActiveCfg = Release|x64
+		{DA913441-89E7-485C-B6DA-E85D40D61715}.Release|x64.Build.0 = Release|x64
+		{DA913441-89E7-485C-B6DA-E85D40D61715}.Release|x86.ActiveCfg = Release|x86
+		{DA913441-89E7-485C-B6DA-E85D40D61715}.Release|x86.Build.0 = Release|x86
 	EndGlobalSection
 EndGlobal
